@@ -1,0 +1,23 @@
+{
+	"name": "Students Table",
+	"short_name": "StudentsTable",
+	"description": "Tabela de Estudantes",
+	"start_url": "./index.html",
+	"display": "standalone",
+	"orientation": "portrait",
+	"lang": "pt-BR",
+	"icons": [
+		{
+			"src": "./icon.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"screenshots": [
+		{
+			"src": "./screenshot.png",
+			"sizes": "1280x720",
+			"type": "image/png"
+		}
+	]
+}

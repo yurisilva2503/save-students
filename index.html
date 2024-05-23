@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Estudantes</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/10944/10944356.png" type="image/png">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./media-query.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="manifest" href="./site.webmanifest">
+</head>
+<body onload="registerServiceWorker()">
+    <div class="wrapper">
+        <form class="inputs_container">
+            <input type="text" id="name" placeholder="Nome" autocomplete="name" autofocus required>
+            <input type="number" min="0" max="10" id="n1" placeholder="Nota 1ªAv" required>
+            <input type="number" min="0" max="10" id="n2" placeholder="Nota 2ªAv" required>
+            <button id="btn_add-student" onclick="addStudent()" class="main-btn" aria-label="Adicionar novo aluno">Adicionar</button>
+            <button id="btn_update-student" onclick="updateStudent()" class="main-btn" aria-label="Atualizar Aluno">Atualizar</button>
+            <input type="checkbox" id="switch_dark-mode">
+            <label for="switch_dark-mode" class="material-symbols-outlined">toggle_off</label>
+        </form>
+        <div class="table_container">
+            <p id="toast-sleep"></p> 
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th scope="col" class="th_name">Nome</th>
+                        <th scope="col" class="th_grade">1ª Av</th>
+                        <th scope="col" class="th_grade">2ª Av</th>
+                        <th scope="col" class="th_average">Média</th>
+                        <th scope="col" class="th_result">Resultado</th>
+                        <th scope="col" class="th_actions">#</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./sw.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

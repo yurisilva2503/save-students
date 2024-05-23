@@ -1,0 +1,285 @@
+@media (min-width: 280px) and (max-width: 480px) {
+    .wrapper{
+        width: 95vw;
+    }
+
+    .inputs_container > input{
+        font-size: .7em;
+        width: 55%;
+    }
+
+    #toast-sleep{
+        top: calc(50% - 49%);
+        width: 200px;
+        padding: 3px 0px;
+        font-size: .7em;
+    }
+
+    #toast-back{
+        top: calc(50% - 49%);
+        width: 200px;
+        padding: 3px 0px;
+        font-size: .7em;
+    }
+
+    #toast-called{
+        top: calc(50% - 49%);
+        width: 200px;
+        padding: 3px 0px;
+        font-size: .7em;
+    }
+
+    .main-btn{
+        font-size: .6em;
+        height: 25px;
+    }
+
+    table > thead > tr > th{
+        font-size: .75em;
+        padding: 3px 5px;
+    }
+
+    table > tbody > tr > th{
+        font-size: .7em;
+        padding: 3px 0px;
+    }
+
+    table > tbody > tr > td{
+        font-size: .7em;
+        padding: 3px 0px;    
+    }
+
+    .material-symbols-outlined.-delete, .material-symbols-outlined.-edit{
+        font-size: 18px;
+    }
+
+    #switch_dark-mode + label {
+        cursor: pointer;
+        font-size: 22px;
+    }
+    
+    .th_name{
+        width: 30%; 
+    }
+    
+    .th_grade{
+        width: 15%;
+    }
+    
+    .th_average{
+        width: 10%;
+    }
+    
+    .th_result{
+        width: 10%;
+    }
+    
+    .th_actions{
+        width: 15%;
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 768px) {
+    .wrapper{
+        width: 95vw;
+    }
+
+    .inputs_container > input{
+        font-size: 1em;
+    }
+
+    #toast-sleep{
+        top: calc(50% - 49%);
+        width: 250px;
+        padding: 3px 0px;
+        font-size: 1em;
+    }
+
+    #toast-back{
+        top: calc(50% - 49%);
+        width: 250px;
+        padding: 3px 0px;
+        font-size: 1em;
+    }
+
+    #toast-called{
+        top: calc(50% - 49%);
+        width: 250px;
+        padding: 3px 0px;
+        font-size: 1em;
+    }
+
+    .main-btn{
+        font-size: 1em;
+    }
+
+    table > thead > tr > th{
+        font-size: 1em;
+        padding: 3px 5px;
+    }
+
+    table > tbody > tr > th{
+        font-size: .9em;
+        padding: 3px 0px;
+    }
+
+    table > tbody > tr > td{
+        font-size: .9em;
+        padding: 3px 0px;    
+    }
+
+    .material-symbols-outlined.-delete, .material-symbols-outlined.-edit{
+        font-size: 24px;
+    }
+
+    #switch_dark-mode + label {
+        cursor: pointer;
+        font-size: 30px;
+    }
+
+    .th_name{
+        width: 30%; 
+    }
+    
+    .th_grade{
+        width: 15%;
+    }
+    
+    .th_average{
+        width: 10%;
+    }
+    
+    .th_result{
+        width: 10%;
+    }
+    
+    .th_actions{
+        width: 15%;
+    }
+  }
+
+  @media(min-width: 769px) and (max-width: 1024px) {
+    .wrapper{
+        width: 95vw;
+    }
+
+    .inputs_container > input{
+        font-size: 1.2em;
+    }
+
+    #toast-sleep{
+        top: calc(50% - 49%);
+        width: 250px;
+        padding: 3px 0px;
+        font-size: 1em;
+    }
+
+    #toast-back{
+        top: calc(50% - 49%);
+        width: 250px;
+        padding: 3px 0px;
+        font-size: 1em;
+    }
+
+    #toast-called{
+        top: calc(50% - 49%);
+        width: 250px;
+        padding: 3px 0px;
+        font-size: 1em;
+    }
+
+    .main-btn{
+        font-size: 1.1em;
+    }
+
+    table > thead > tr > th{
+        font-size: 1.2em;
+        padding: 3px 5px;
+    }
+
+    table > tbody > tr > th{
+        font-size: 1em;
+        padding: 3px 0px;
+    }
+
+    table > tbody > tr > td{
+        font-size: 1em;
+        padding: 3px 0px;    
+    }
+
+    .material-symbols-outlined.-delete, .material-symbols-outlined.-edit{
+        font-size: 24px;
+    }
+
+    #switch_dark-mode + label {
+        cursor: pointer;
+        font-size: 30px;
+    }
+
+    .th_name{
+        width: 30%; 
+    }
+    
+    .th_grade{
+        width: 15%;
+    }
+    
+    .th_average{
+        width: 10%;
+    }
+    
+    .th_result{
+        width: 10%;
+    }
+    
+    .th_actions{
+        width: 15%;
+    }
+  }
+
+  @media (min-width: 1400px) and (max-width: 1920px) {
+    .inputs_container > input{
+        font-size: 1.5em;
+        padding: 9px;
+    }
+
+    #toast-sleep{
+        width: 340px;
+        font-size: 1.3em;
+    }
+
+    #toast-back{
+        width: 340px;
+        font-size: 1.3em;
+    }
+
+    #toast-called{
+        width: 340px;
+        font-size: 1.3em;
+    }
+
+    .main-btn{
+        font-size: 1.3em;
+    }
+
+    table > thead > tr > th{
+        font-size: 1.4em;
+    }
+
+    table > tbody > tr > th{
+        font-size: 1.3em;
+    }
+
+    table > tbody > tr > td{
+        font-size: 1.3em;   
+    }
+
+    .material-symbols-outlined.-delete, .material-symbols-outlined.-edit{
+        font-size: 30px;
+    }
+
+    #switch_dark-mode + label {
+        cursor: pointer;
+        font-size: 40px;
+    }
+  }

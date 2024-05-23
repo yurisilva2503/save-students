@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@50..200,200..900&display=swap');
+* {
+    font-family: 'Inconsolata', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-bg: #fff;
+    --main-bgTable: #ffffffef;
+    --main-bgToast: #000;
+    --main-bgColumn: #7c7c7c3f;
+    --main-bgBtn: #00ad3d;
+    --main-bgInput: #fff;
+    --main-bgSwitch: #dbdbdb;
+    --main-bgModal: #000;
+    --main-textColor: #000;
+    --main-btnColor: #fff;
+    --main-borderColor: #000;
+    --main-toastColor: #fff;
+    --main-switchColor: #999999;
+    --main-modalColor: #fff;
+    --main-btnHover: #00a03d;
+    --main-deleteColor: #000;
+    --main-editColor: #000;
+    --main-deleteColor: #e00000;
+    --main-editColor: #d49c00;
+    --main-deleteHover: #000;
+    --main-editHover: #000;
+}
+
+.dark-mode:root {
+    --main-bg: #1a1f29e1;
+    --main-bgTable: #27353f86;
+    --main-bgToast: #000;
+    --main-bgColumn: #141414;
+    --main-bgBtn: #141414;
+    --main-bgInput: #202020;
+    --main-textColor: #d4d4d4;
+    --main-btnColor: #d4d4d4;
+    --main-borderColor: #888888;
+    --main-toastColor: #fff;
+    --main-btnHover: #00ad3d;
+    --main-deleteColor: #e00000;
+    --main-editColor: #ffbb00;
+    --main-deleteHover: #fff;
+    --main-editHover: #fff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    background-color: var(--main-bg);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 60vw;
+    height: 96vh;
+}
+
+.inputs_container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap: 4px;
+    margin-bottom: 8px;
+}
+
+.inputs_container>input {
+    width: 100%;
+    font-size: 1em;
+    font-weight: 500;
+    color: var(--main-textColor);
+    background-color: var(--main-bgInput);
+    border: 1px solid var(--main-borderColor);
+    border-radius: 3px;
+    padding: 3px;
+}
+
+.inputs_container>input[type="number"] {
+    width: 40%;
+}
+
+.inputs_container>input:focus{
+    outline: none;
+}
+
+#switch_dark-mode {
+    display: none;
+}
+
+#switch_dark-mode+label {
+    cursor: pointer;
+    font-size: 35px;
+}
+
+.main-btn {
+    font-weight: bold;
+    background-color: var(--main-bgBtn);
+    color: var(--main-btnColor);
+    border: 1px solid var(--main-borderColor);
+    border-radius: 3px;
+    padding: 0px 5px;
+    cursor: pointer;
+}
+
+.main-btn:hover {
+    background-color: var(--main-btnHover);
+}
+
+.table_container {
+    width: 100%;
+    overflow: auto;
+}
+
+#toast-sleep {
+    text-align: center;
+    position: absolute;
+    top: 2.09%;
+    left: -400px;
+    border-radius: 0px 3px 3px 0px;
+    padding: 3px 5px;
+    width: 225px;
+    font-size: .9em;
+    font-weight: bold;
+    color: var(--main-toastColor);
+    background-color: var(--main-bgToast);
+}
+
+#toast-called {
+    text-align: center;
+    position: absolute;
+    top: 2.09%;
+    left: -400px;
+    border-radius: 0px 3px 3px 0px;
+    padding: 3px 5px;
+    width: 225px;
+    font-size: .9em;
+    font-weight: bold;
+    background-color: var(--main-bgToast);
+    color: var(--main-toastColor);
+    animation: fadeIn .45s ease-in-out forwards;
+}
+
+#toast-back {
+    text-align: center;
+    position: absolute;
+    top: 2.09%;
+    left: -400px;
+    border-radius: 0px 3px 3px 0px;
+    padding: 3px 5px;
+    width: 225px;
+    font-size: .9em;
+    font-weight: bold;
+    color: var(--main-toastColor);
+    background-color: var(--main-bgToast);
+    animation: fadeOut .45s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        left: -400px;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        left: 0px;
+    }
+    to {
+        left: -400px;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    width: inherit;
+}
+
+table>thead>tr>th {
+    font-size: 1.15em;
+    font-weight: bold;
+    padding: 5px 0px;
+    background-color: var(--main-bgColumn);
+    color: var(--main-textColor);
+    border: 1px solid var(--main-borderColor);
+}
+
+table>tbody>tr>th {
+    font-size: 1em;
+    font-weight: 400;
+    padding: 4px 10px;
+    height: 35px;
+    background-color: var(--main-bgTable);
+    color: var(--main-textColor);
+    border: 1px solid var(--main-borderColor);
+}
+
+table>tbody>tr>td {
+    font-size: 1em;
+    font-weight: 400;
+    padding: 4px 10px;
+    background-color: var(--main-bgTable);
+    color: var(--main-textColor);
+    border: 1px solid var(--main-borderColor);
+}
+
+.material-symbols-outlined {
+    cursor: pointer;
+}
+
+.material-symbols-outlined.-delete {
+    color: var(--main-deleteColor);
+}
+
+.material-symbols-outlined.-delete:hover {
+    color: var(--main-deleteHover);
+}
+
+.material-symbols-outlined.-edit {
+    color: var(--main-editColor);
+}
+
+.material-symbols-outlined.-edit:hover {
+    color: var(--main-editHover);
+}
+
+.th_name {
+    width: 40%;
+}
+
+.th_grade {
+    width: 10%;
+}
+
+.th_average {
+    width: 10%;
+}
+
+.th_result {
+    width: 20%;
+}
+
+.th_actions {
+    width: 20%;
+}
+
+.th_name-student {
+    font-weight: bold;
+}
