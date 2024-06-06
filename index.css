@@ -71,9 +71,15 @@ body {
 .user-info {
     width: 100%;
     padding-bottom: 12px;
-    text-align: center;
     color: var(--main-textColor);
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+#installButton {
+    padding: 3px 8px;
 }
 
 .inputs_container {
