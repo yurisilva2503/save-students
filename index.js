@@ -80,10 +80,13 @@ window.addEventListener('beforeinstallprompt', (event) => {
   deferredPrompt = event;
 
   const installButton = document.getElementById('installButton');
+  const hr = document.querySelector('hr');
   installButton.style.display = 'block';
+  hr.style.display = 'block';
 
   installButton.addEventListener('click', (e) => {
     installButton.style.display = 'none';
+    hr.style.display = 'none';
     deferredPrompt.prompt();
     deferredPrompt.userChoice.then((choiceResult) => {
       if (choiceResult.outcome === 'accepted') {
