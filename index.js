@@ -118,6 +118,7 @@ function addStudent() {
       if (existingStudent) {
         showToast("Este aluno já existe ⚠️");
         sendNotification("Aluno ⚠️", "Este aluno já existe ⚠️")
+        return
       } else {
         const id = generateUniqueId();
         const student = { id, name, n1, n2, average, result };
