@@ -3,6 +3,10 @@
         width: 95vw;
     }
 
+    .user-info {
+        font-size: .7em;
+    }
+
     .inputs_container > input{
         font-size: .7em;
         width: 55%;
@@ -82,6 +86,10 @@
   @media (min-width: 481px) and (max-width: 768px) {
     .wrapper{
         width: 95vw;
+    }
+
+    .user-info {
+        font-size: .7em;
     }
 
     .inputs_container > input{
@@ -241,6 +249,10 @@
     .inputs_container > input{
         font-size: 1.5em;
         padding: 9px;
+    }
+
+    .user-info {
+        font-size: 1.4em;
     }
 
     #toast-sleep{

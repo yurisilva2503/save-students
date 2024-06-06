@@ -56,6 +56,15 @@ document.addEventListener("DOMContentLoaded", function () {
   btnEditStudent.style.display = "none";
   applyTheme();
 
+  let userName = localStorage.getItem("userName");
+  if (!userName) {
+    userName = window.prompt("Digite seu nome:");
+    if (userName) {
+      localStorage.setItem("userName", userName);
+    }
+  }
+  document.getElementById("username").textContent = userName;
+
   Notification.requestPermission().then(function(permission) {
     if (permission === 'granted') {
       console.log('Notification permission granted.');
